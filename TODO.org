@@ -1,0 +1,32 @@
+#-*- mode: org -*-
+#+STARTUP: showall
+#+TODO: TODO
+
+* TODO
+** DONE
+- [X] added command line options for changing resolution on startup
+- [X] change position pixel data from std::vector to std::list
+- [X] refactor names, they don't need to prefixed with type
+- [X] split the pge and physobj classes into seperate modules
+- [X] add the ability for the balls to rotate
+- [X] reserve space in vector holding the balls
+- [X] add accessors and mutators and make datamembers private
+    - [X] in Sim.cpp: all references to b.Position/Velocity/Acceleration
+      must be replaced with approprate getters/setters. New setters may
+      need to be made
+- [X] fix collision so that the balls don't get stuck in eachother or wall
+- [X] add mass to the balls and incorporate momentum
+- [X] print ball debug info to stdout
+- [X] Add air resistance parameter
+** IN PROGRESS
+- [-] changing the resolution dramatically lowers the framerate
+- [-] move everything physics related into physobj
+In PhysObj:
+** NOT STARTED
+In PhysObj:
+    - [] break up PhysObj and Ball files
+    - [] use VertexIndex
+In Sim:
+    - [] the numbers used in DisplayComponents() should be dynamically derived from pge and not hard coded
+    - [] should sim::vector<ball> be a std::list instead?
+    - [] break up onUserUpdate/Create and other Sim methods

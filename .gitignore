@@ -1,0 +1,8 @@
+#object files
+*.o
+
+#binaries
+proggy
+
+#notes
+notes
